@@ -1,0 +1,34 @@
+{
+
+  "CUHK_JC_iCAR_Display.LED1|block": "LED燈|引腳 %pin|狀態 %value",
+  "CUHK_JC_iCAR_Display.LED2|block": "LED燈|引腳 %pin|亮度 %value",
+  "CUHK_JC_iCAR_Display.BreathLED|block": "呼吸燈|引腳 %pin",
+  "CUHK_JC_iCAR_Display.RGB|block": "RGB七彩燈|引腳R %pin1|引腳G %pin2|引腳B %pin3|紅色 %value1|綠色 %value2|藍色 %value3",
+  "CUHK_JC_iCAR_Display.RGB2|block": "RGB七彩燈|引腳R %pin1|引腳G %pin2|引腳B %pin3|顯示 %value",
+
+  "CUHK_JC_iCAR_Input.TouchPad|block": "觸摸開關|引腳 %pin|返回 %value",
+  "CUHK_JC_iCAR_Input.Rocker|block": "遙桿|VRX %pin1|VRY %pin2|SW %pin3|返回 %value",
+  "CUHK_JC_iCAR_Input.Button|block": "按鍵|引腳 %pin|返回 %value",
+
+  "CUHK_JC_iCAR_Sensors.Voice_Sensor|block": "聲音傳感器|引腳 %pin|返回 %value",
+  "CUHK_JC_iCAR_Sensors.IR_Sensor|block": "紅外傳感器|引腳 %pin|  |%value|障礙物",
+  "CUHK_JC_iCAR_Sensors.IR_Send|block": "紅外發射|引腳 %pin",
+  "CUHK_JC_iCAR_Sensors.Ultrasonic|block": "超聲波|發射管腳 %Trig|接收管腳 %Echo",
+
+  "CUHK_JC_iCAR_Sound.Buzzer|block": "有源蜂鳴器|引腳 %pin|值 %value",
+
+  "CUHK_JC_iCAR_Motor.Fan|block": "風扇|引腳 %pin|速度 %value",
+  "CUHK_JC_iCAR_Motor.Servo|block": "舵機|引腳 %pin|角度 %value",
+
+  "CUHK_JC_iCAR_Vehicle.RGB_Car_Big|block": "小車RGB探照燈|紅色 %value1|綠色 %value2|藍色 %value3",
+  "CUHK_JC_iCAR_Vehicle.RGB_Car_Big2|block": "小車RGB探照燈|選擇車燈顏色 %value",
+  "CUHK_JC_iCAR_Vehicle.Ultrasonic_Car|block": "超聲波返回（cm）",
+  "CUHK_JC_iCAR_Vehicle.RGB_Car_Program|block": "七彩流水燈",
+  "CUHK_JC_iCAR_Vehicle.Music_Car|block": "小車音樂播放|%index",
+  "CUHK_JC_iCAR_Vehicle.Line_Sensor|block": "巡線傳感器|位置 %direct|檢測到 %value",
+  "CUHK_JC_iCAR_Vehicle.Avoid_Sensor|block": "避障傳感器|檢測到 %value",
+  "CUHK_JC_iCAR_Vehicle.Servo_Car|block": "小車舵機|編號 %num|角度 %value",
+  "CUHK_JC_iCAR_Vehicle.CarCtrl|block": "小車控製|%index",
+  "CUHK_JC_iCAR_Vehicle.CarCtrlSpeed|block": "小車控製|%index|速度 %speed",
+  "CUHK_JC_iCAR_Vehicle.CarCtrlSpeed2|block": "小車控製|%index|左電機速度 %speed1|右電機速度 %speed2"
+}
