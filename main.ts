@@ -1,4 +1,4 @@
-﻿/*
+/*
 Copyright (C): 2021-2030, The Chinese University of Hong Kong.
 */
 
@@ -7,7 +7,7 @@ Copyright (C): 2021-2030, The Chinese University of Hong Kong.
 //% color="#C814B8" weight=25 icon="\uf1d4"
 namespace CUHK_JC_iCar_Display {
     
-    export enum enColor {
+    enum enColor {
 
         //% blockId="OFF" block="Off"
         OFF = 0,
@@ -27,7 +27,7 @@ namespace CUHK_JC_iCar_Display {
         Yellow,
 
     }
-    export enum enLED1 {
+    enum enLED1 {
         
         //% blockId="OFF" block="Off"
         OFF = 0,
@@ -160,14 +160,14 @@ namespace CUHK_JC_iCar_Display {
 //% color="#87CEEB" weight=24 icon="\uf1b6"
 namespace CUHK_JC_iCar_Sensors {
 
-    export enum enVoice {
+    enum enVoice {
         //% blockId="Voice" block="Voice"
         Voice = 0,
         //% blockId="NoVoice" block="NoVoice"
         NoVoice = 1
     }
 
-    export enum enIR {
+    enum enIR {
         //% blockId="Get" block="Detected"
         Get = 0,
         //% blockId="NoVoice" block="Undetected"
@@ -264,7 +264,7 @@ namespace CUHK_JC_iCar_Sensors {
 //% color="#808080" weight=23 icon="\uf11c"
 namespace CUHK_JC_iCar_Input {
 
-    export enum enRocker {
+    enum enRocker {
         //% blockId="Nostate" block="No"
         Nostate = 0,
         //% blockId="Up" block="Up"
@@ -279,13 +279,13 @@ namespace CUHK_JC_iCar_Input {
         Press
     }
 
-    export enum enTouch {
+    enum enTouch {
         //% blockId="NoTouch" block="Untouched"
         NoTouch = 0,
         //% blockId="Touch" block="Touched"
         Touch = 1
     }
-    export enum enButton {
+    enum enButton {
         //% blockId="Press" block="Pressed"
         Press = 0,
         //% blockId="Realse" block="Released"
@@ -376,7 +376,7 @@ namespace CUHK_JC_iCar_Input {
 
 //% color="#D2691E" weight=22 icon="\uf001"
 namespace CUHK_JC_iCar_Sound {
-    export enum enBuzzer {
+    enum enBuzzer {
 
         //% blockId="NoBeep" block="Unbeeped"
         NoBeep = 0,
@@ -457,7 +457,7 @@ namespace CUHK_JC_iCar_Vehicle {
     let initialized = false
     let yahStrip: neopixel.Strip;
 
-    export enum enColor {
+    enum enColor {
 
         //% blockId="OFF" block="Off"
         OFF = 0,
@@ -477,7 +477,7 @@ namespace CUHK_JC_iCar_Vehicle {
         Yellow,
 
     }
-    export enum enMusic {
+    enum enMusic {
 
         dadadum = 0,
         entertainer,
@@ -501,7 +501,7 @@ namespace CUHK_JC_iCar_Vehicle {
         power_up,
         power_down
     }
-    export enum enPos {
+    enum enPos {
 
         //% blockId="LeftState" block="LeftStatus"
         LeftState = 0,
@@ -509,7 +509,7 @@ namespace CUHK_JC_iCar_Vehicle {
         RightState = 1
     }
 
-    export enum enLineState {
+    enum enLineState {
         //% blockId="White" block="WhiteLine"
         White = 0,
         //% blockId="Black" block="BlackLine"
@@ -517,7 +517,7 @@ namespace CUHK_JC_iCar_Vehicle {
 
     }
     
-    export enum enAvoidState {
+    enum enAvoidState {
         //% blockId="OBSTACLE" block="Blocked"
         OBSTACLE = 0,
         //% blockId="NOOBSTACLE" block="Unblocked"
@@ -526,13 +526,13 @@ namespace CUHK_JC_iCar_Vehicle {
     }
 
     
-    export enum enServo {
+    enum enServo {
         
         S1 = 1,
         S2,
         S3
     }
-    export enum CarState {
+    enum CarState {
         //% blockId="Car_Run" block="Forward"
         Car_Run = 1,
         //% blockId="Car_Back" block="Backward"
