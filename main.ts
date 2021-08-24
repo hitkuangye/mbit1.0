@@ -2,11 +2,6 @@
 Copyright (C): 2021-2030, The Chinese University of Hong Kong.
 */
 
-
-
-//% color="#C814B8" weight=25 icon="\uf1d4"
-namespace CUHK_JC_iCar_Display {
-    
     enum enColor {
 
         //% blockId="OFF" block="Off"
@@ -34,6 +29,153 @@ namespace CUHK_JC_iCar_Display {
         //% blockId="ON" block="On"
         ON =1
     }
+
+    enum enVoice {
+        //% blockId="Voice" block="Voice"
+        Voice = 0,
+        //% blockId="NoVoice" block="NoVoice"
+        NoVoice = 1
+    }
+
+    enum enIR {
+        //% blockId="Get" block="Detected"
+        Get = 0,
+        //% blockId="NoVoice" block="Undetected"
+        NoGet = 1
+    }
+    
+    enum enRocker {
+        //% blockId="Nostate" block="No"
+        Nostate = 0,
+        //% blockId="Up" block="Up"
+        Up,
+        //% blockId="Down" block="Down"
+        Down,
+        //% blockId="Left" block="Left"
+        Left,
+        //% blockId="Right" block="Right"
+        Right,
+        //% blockId="Press" block="Pressed"
+        Press
+    }
+
+    enum enTouch {
+        //% blockId="NoTouch" block="Untouched"
+        NoTouch = 0,
+        //% blockId="Touch" block="Touched"
+        Touch = 1
+    }
+    enum enButton {
+        //% blockId="Press" block="Pressed"
+        Press = 0,
+        //% blockId="Realse" block="Released"
+        Realse = 1
+    }
+
+    enum enBuzzer {
+
+        //% blockId="NoBeep" block="Unbeeped"
+        NoBeep = 0,
+        //% blockId="Beep" block="Beeped"
+        Beep
+    }
+
+    enum enColor {
+
+        //% blockId="OFF" block="Off"
+        OFF = 0,
+        //% blockId="Red" block="Red"
+        Red,
+        //% blockId="Green" block="Green"
+        Green,
+        //% blockId="Blue" block="Blue"
+        Blue,
+        //% blockId="White" block="White"
+        White,
+        //% blockId="Cyan" block="Cyan"
+        Cyan,
+        //% blockId="Pinkish" block="Pinkish"
+        Pinkish,
+        //% blockId="Yellow" block="Yellow"
+        Yellow,
+
+    }
+    enum enMusic {
+
+        dadadum = 0,
+        entertainer,
+        prelude,
+        ode,
+        nyan,
+        ringtone,
+        funk,
+        blues,
+
+        birthday,
+        wedding,
+        funereal,
+        punchline,
+        baddy,
+        chase,
+        ba_ding,
+        wawawawaa,
+        jump_up,
+        jump_down,
+        power_up,
+        power_down
+    }
+    enum enPos {
+
+        //% blockId="LeftState" block="LeftStatus"
+        LeftState = 0,
+        //% blockId="RightState" block="RightStatus"
+        RightState = 1
+    }
+
+    enum enLineState {
+        //% blockId="White" block="WhiteLine"
+        White = 0,
+        //% blockId="Black" block="BlackLine"
+        Black = 1
+
+    }
+    
+    enum enAvoidState {
+        //% blockId="OBSTACLE" block="Blocked"
+        OBSTACLE = 0,
+        //% blockId="NOOBSTACLE" block="Unblocked"
+        NOOBSTACLE = 1
+
+    }
+
+    
+    enum enServo {
+        
+        S1 = 1,
+        S2,
+        S3
+    }
+    enum CarState {
+        //% blockId="Car_Run" block="Forward"
+        Car_Run = 1,
+        //% blockId="Car_Back" block="Backward"
+        Car_Back = 2,
+        //% blockId="Car_Left" block="TurnLeft"
+        Car_Left = 3,
+        //% blockId="Car_Right" block="TurnRight"
+        Car_Right = 4,
+        //% blockId="Car_Stop" block="Stop"
+        Car_Stop = 5,
+        //% blockId="Car_SpinLeft" block="SpinLeft"
+        Car_SpinLeft = 6,
+        //% blockId="Car_SpinRight" block="SpinRight"
+        Car_SpinRight = 7
+    }
+
+//% color="#C814B8" weight=25 icon="\uf1d4"
+namespace CUHK_JC_iCar_Display {
+    
+
 
     //% blockId=mbit_LED1 block="LED1|pin %pin|value %value"
     //% weight=5
@@ -160,20 +302,6 @@ namespace CUHK_JC_iCar_Display {
 //% color="#87CEEB" weight=24 icon="\uf1b6"
 namespace CUHK_JC_iCar_Sensors {
 
-    enum enVoice {
-        //% blockId="Voice" block="Voice"
-        Voice = 0,
-        //% blockId="NoVoice" block="NoVoice"
-        NoVoice = 1
-    }
-
-    enum enIR {
-        //% blockId="Get" block="Detected"
-        Get = 0,
-        //% blockId="NoVoice" block="Undetected"
-        NoGet = 1
-    }
-    
 
     //% blockId=mbit_Voice_Sensor block="Voice_Sensor|pin %pin|value %value"
     //% weight=100
@@ -264,33 +392,6 @@ namespace CUHK_JC_iCar_Sensors {
 //% color="#808080" weight=23 icon="\uf11c"
 namespace CUHK_JC_iCar_Input {
 
-    enum enRocker {
-        //% blockId="Nostate" block="No"
-        Nostate = 0,
-        //% blockId="Up" block="Up"
-        Up,
-        //% blockId="Down" block="Down"
-        Down,
-        //% blockId="Left" block="Left"
-        Left,
-        //% blockId="Right" block="Right"
-        Right,
-        //% blockId="Press" block="Pressed"
-        Press
-    }
-
-    enum enTouch {
-        //% blockId="NoTouch" block="Untouched"
-        NoTouch = 0,
-        //% blockId="Touch" block="Touched"
-        Touch = 1
-    }
-    enum enButton {
-        //% blockId="Press" block="Pressed"
-        Press = 0,
-        //% blockId="Realse" block="Released"
-        Realse = 1
-    }
 
     //% blockId=mbit_TouchPad block="TouchPad|pin %pin|value %value"
     //% weight=100
@@ -376,13 +477,6 @@ namespace CUHK_JC_iCar_Input {
 
 //% color="#D2691E" weight=22 icon="\uf001"
 namespace CUHK_JC_iCar_Sound {
-    enum enBuzzer {
-
-        //% blockId="NoBeep" block="Unbeeped"
-        NoBeep = 0,
-        //% blockId="Beep" block="Beeped"
-        Beep
-    }
 
     //% blockId=mbit_Buzzer block="Buzzer|pin %pin|value %value"
     //% weight=100
@@ -457,97 +551,6 @@ namespace CUHK_JC_iCar_Vehicle {
     let initialized = false
     let yahStrip: neopixel.Strip;
 
-    enum enColor {
-
-        //% blockId="OFF" block="Off"
-        OFF = 0,
-        //% blockId="Red" block="Red"
-        Red,
-        //% blockId="Green" block="Green"
-        Green,
-        //% blockId="Blue" block="Blue"
-        Blue,
-        //% blockId="White" block="White"
-        White,
-        //% blockId="Cyan" block="Cyan"
-        Cyan,
-        //% blockId="Pinkish" block="Pinkish"
-        Pinkish,
-        //% blockId="Yellow" block="Yellow"
-        Yellow,
-
-    }
-    enum enMusic {
-
-        dadadum = 0,
-        entertainer,
-        prelude,
-        ode,
-        nyan,
-        ringtone,
-        funk,
-        blues,
-
-        birthday,
-        wedding,
-        funereal,
-        punchline,
-        baddy,
-        chase,
-        ba_ding,
-        wawawawaa,
-        jump_up,
-        jump_down,
-        power_up,
-        power_down
-    }
-    enum enPos {
-
-        //% blockId="LeftState" block="LeftStatus"
-        LeftState = 0,
-        //% blockId="RightState" block="RightStatus"
-        RightState = 1
-    }
-
-    enum enLineState {
-        //% blockId="White" block="WhiteLine"
-        White = 0,
-        //% blockId="Black" block="BlackLine"
-        Black = 1
-
-    }
-    
-    enum enAvoidState {
-        //% blockId="OBSTACLE" block="Blocked"
-        OBSTACLE = 0,
-        //% blockId="NOOBSTACLE" block="Unblocked"
-        NOOBSTACLE = 1
-
-    }
-
-    
-    enum enServo {
-        
-        S1 = 1,
-        S2,
-        S3
-    }
-    enum CarState {
-        //% blockId="Car_Run" block="Forward"
-        Car_Run = 1,
-        //% blockId="Car_Back" block="Backward"
-        Car_Back = 2,
-        //% blockId="Car_Left" block="TurnLeft"
-        Car_Left = 3,
-        //% blockId="Car_Right" block="TurnRight"
-        Car_Right = 4,
-        //% blockId="Car_Stop" block="Stop"
-        Car_Stop = 5,
-        //% blockId="Car_SpinLeft" block="SpinLeft"
-        Car_SpinLeft = 6,
-        //% blockId="Car_SpinRight" block="SpinRight"
-        Car_SpinRight = 7
-    }
 
     function i2cwrite(addr: number, reg: number, value: number) {
         let buf = pins.createBuffer(2)
